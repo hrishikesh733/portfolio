@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("image.jpg/bg-menu-full-2.jpg");
+    background-size: cover;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    display: flex;
+    list-style: none;
+    color: whitesmoke;
+    padding: 30px;
+    justify-content: space-around;
+}
+li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    padding-top: 15px;
+}
+li a:hover {
+    color: orange;
+}
+.hello {
+    color: darkgoldenrod;
+    font-size: 60px;
+    padding: 60px;
+}
+.am {
+    color: whitesmoke;
+    font-size: 10rem;
+    padding-left: 100px;
+}
+.about {
+    color: darkgoldenrod;
+    font-size: 60px;
+    padding-top: 300px;
+}
+.about-content {
+    color: whitesmoke;
+    padding-top: 90px;
+    font-size: 30px;
+}
+#one {
+    padding: 50px;
+    padding-top: 200px;
+    border-radius: 30%;
+    float: left;
+}
+.cv {
+    display: inline-block;
+    padding: 15px 40px;
+    margin: 70px auto;
+    margin-left: 250px;
+    background-color: black;
+    color: darkgoldenrod;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+}
+.cv:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.Edu {
+    color: darkgoldenrod;
+    padding-top: 230px;
+    text-align: center;
+}
+.un {
+    padding-top: 50px;
+}
+#skill {
+    color: darkgoldenrod;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 60px;
+}
+.empty, .empty1 {
+    color: whitesmoke;
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#project {
+    color: darkgoldenrod;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 60px;
+}
+.box {
+    color: whitesmoke;
+    font-size: 20px;
+    border: 2px solid darkgoldenrod;
+    width: 400px;
+    margin-top: 100px;
+    display: inline-block;
+    margin-left: 250px;
+    vertical-align: top;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.box img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    border-bottom: 1px solid darkgoldenrod;
+}
+.box:hover {
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+}
+
+#contact {
+    color: darkgoldenrod;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 60px;
+}
+.get {
+    color: whitesmoke;
+    font-size: 20px;
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.des {
+    color: whitesmoke;
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 150px;
+}
+.ht:hover{
+    transform: scale(1.3);
+}
+.cs:hover{
+    transform: scale(1.3);
+}
+.js:hover{
+    transform: scale(1.3);
+}
+.gt:hover{
+    transform: scale(1.3);
+}
+.gh:hover{
+    transform: scale(1.3);
+}
+.rc:hover{
+    transform: scale(1.3);
+}
+
+/* ✅ NEW FLEX CONTACT SECTION */
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: whitesmoke;
+    text-align: center;
+    padding: 50px 20px;
+    gap: 30px;
+}
+.contact-block {
+    flex: 1;
+    min-width: 250px;
+}
+.contact-heading {
+    font-size: 24px;
+    color: darkgoldenrod;
+    margin-bottom: 10px;
+}
+.contact-link {
+    display: block;
+    color: whitesmoke;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 5px 0;
+}
+.contact-link:hover {
+    color: orange;
+}
+
+/* TOGGLE NAV */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: darkgoldenrod;
+    cursor: pointer;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    li a {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+    .hello {
+        font-size: 40px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .am {
+        font-size: 3rem;
+        padding: 20px;
+        text-align: center;
+    }
+    #one {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    .about {
+        font-size: 40px;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .about-content {
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+    }
+    .cv {
+        margin: 30px auto;
+        padding: 20px;
+        display: block;
+        text-align: center;
+    }
+    .Edu {
+        font-size: 40px;
+        padding-top: 80px;
+    }
+    .uni, .higher {
+        font-size: 18px;
+        text-align: center;
+    }
+    #skill {
+        font-size: 40px;
+        padding-top: 50px;
+    }
+    .empty, .empty1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    #project {
+        font-size: 40px;
+        padding-top: 60px;
+    }
+    .box {
+        width: 90%;
+        margin: 30px 20px;
+    }
+    #contact {
+        font-size: 40px;
+        padding-top: 60px;
+    }
+    .get, .des {
+        font-size: 20px;
+        padding: 10px 20px;
+        text-align: center;
+    }
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-link {
+        font-size: 16px;
+    }
+    .menu-toggle {
+        display: block;
+        text-align: right;
+    }
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: black;
+    }
+    #nav-links.show {
+        display: flex;
+    }
+    li {
+        padding: 15px 0;
+    }
+}

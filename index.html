@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image.jpg/icons8-portfolio-50.png">
+</head>
+<body>
+    <nav class="navigation">
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <ul id="nav-links">
+            <li><b><a class="homebar" href="#">Home</a></b></li>
+            <li><b><a href="#one">About</a></b></li>
+            <li><b><a href="#skill">Skill</a></b></li>
+            <li><b><a href="#project">Project</a></b></li>
+            <li><b><a href="#contact">Contact</a></b></li>
+        </ul>
+    </nav>
+
+    <p class="hello">---Hello---</p>
+    <h2 class="am">I am Hrishikesh,<br>Frontend Developer<br>&explorer</h2>
+    <img id="one" src="image.jpg/rishi.jpeg" alt="img" height="800px" width="600px">
+    <h2 class="about">--About--</h2>
+    <p class="about-content">A passionate and motivated Frontend Developer with a strong interest in building clean, responsive, and user-friendly web applications. I'm currently skilled in HTML, CSS, JavaScript, and learning React to dive deeper into modern front-end development. I enjoy learning new technologies, and contributing to meaningful projects. I'm looking for opportunities where I can grow as a developer and contribute to a dynamic team.</p>
+    <a href="image.jpg/web developer.pdf" download class="cv">DOWNLOAD CV</a>
+
+    <h2 class="Edu">Education</h2>
+    <ul class="un">
+        <li><h3 class="uni">Bachelor of Computer Application <br>MGR College of Arts and Science Hosur<br>Periyar University-Salem <br>2022-2025</h3></li>
+        <li><h3 class="higher">Higher Secondary Education<br>Adarsh Matric Higher Secondary School Vaniyambadi <br>2021-2022 </h3></li>
+        <li><h3 class="higher">Secondary Education<br>Adarsh Matric Higher Secondary School Vaniyambadi <br>2019-2020 </h3></li>
+    </ul>
+
+    <h2 id="skill">--Skill--</h2>
+    <div class="bor">
+        <div class="empty">
+            <div class="ht"><img src="image.jpg/html5.png" alt="image" height="100px" width="100px"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML5</div>
+            <div class="cs"><img src="image.jpg/css-3.png" alt="image" height="100px" width="100px"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS3</div>
+            <div class="js"><img src="image.jpg/js.png" alt="image" height="100px" width="100px"><br><br>JAVASCRIPT</div>
+        </div>
+        <div class="empty1">
+            <div class="gt"><img src="image.jpg/social.png" alt="image" height="100px" width="100px"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GIT</div>
+            <div class="gh"><img src="image.jpg/github.png" alt="image" height="100px" width="100px"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GITHUB</div>
+            <div class="rc"><img src="image.jpg/programing.png" alt="image" height="100px" width="100px"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REACT</div>
+        </div>
+    </div>
+
+    <h2 id="project">--Project--</h2>
+    <div class="box">
+        <img src="image.jpg/ecommerce.jpg" alt="image">
+        <p>Developed a static e-commerce website for selling premium coffee powder using only HTML and CSS. The website includes a modern, responsive design aimed at providing a clean and engaging user experience. It serves as a front-end prototype for an online coffee store</p>
+    </div>
+    <div class="box">
+        <img src="image.jpg/todo.jpg" alt="image">
+        <p>A simple and interactive web-based To-Do List application designed to help users manage their daily tasks efficiently. The app allows users to add, edit, delete, and mark tasks as complete. It features a user-friendly interface for dynamic functionality.</p>
+    </div>
+    <div class="box">
+        <img src="image.jpg/dedupe.png" alt="image">
+        <p>A Python-based tool to detect and remove duplicate or visually similar images from a folder. The project uses image hashing techniques to identify duplicates, helping users clean up storage and manage media libraries more efficiently</p>
+    </div>
+    <div class="box">
+        <img src="image.jpg/booking.jpg" alt="image">
+        <p>A web-based system that enables students to book appointments with their teachers online. This project aims to reduce time conflicts and improve the efficiency of academic support. Teachers can manage availability, and students can choose convenient time slots</p>
+    </div>
+
+    <!-- CONTACT -->
+    <h2 id="contact">--Contact--</h2>
+    <h4 class="get">GET IN TOUCH WITH ME</h4>
+    <h4 class="des">I love to hear from you. Whether you have <br> a question or just want to chat about design,<br> tech & art — shoot me a message.</h4>
+
+    <div class="contact-container">
+        <div class="contact-block">
+            <h5 class="contact-heading">Reach me at</h5>
+            <a class="contact-link" href="mailto:hrishikeshdeveloper73@gmail.com">hrishikeshdeveloper73@gmail.com</a>
+        </div>
+        <div class="contact-block">
+            <h5 class="contact-heading">Social</h5>
+            <a class="contact-link" href="https://github.com/hrishikesh733">Github</a>
+            <a class="contact-link" href="https://www.instagram.com/_r_ishi_ms_/">Instagram</a>
+        </div>
+        <div class="contact-block">
+            <h5 class="contact-heading">Address</h5>
+            <p class="contact-link">NO:55, 3 <sup>rd</sup>cross Shabari Nagar RK Hegade Nagar<br>Bengaluru-560077</p>
+        </div>
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
