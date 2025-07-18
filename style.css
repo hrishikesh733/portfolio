@@ -113,8 +113,6 @@ li a:hover {
     border-bottom: 1px solid darkgoldenrod;
 }
 .box:hover {
-    transition: transform 0.3s ease;
-    transform: translateY(-10px);
     background-color: whitesmoke;
     color: black;
     cursor: pointer;
