@@ -113,6 +113,7 @@ li a:hover {
     border-bottom: 1px solid darkgoldenrod;
 }
 .box:hover {
+    transform: translateY(-10px);
     background-color: whitesmoke;
     color: black;
     cursor: pointer;
