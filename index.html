@@ -22,8 +22,8 @@
     </ul>
   </nav>
 
-  <p class="hello" data-aos="fade-down">---Hello---</p>
-  <h2 class="am" data-aos="fade-up">I am Hrishikesh,<br>Frontend Developer<br>&Explorer</h2>
+  <p class="hello" id="auto-type-hello" data-aos="fade-down">---Hello---</p>
+  <h2 class="am" id="auto-type-am" data-aos="fade-up">I am Hrishikesh,<br>Frontend Developer<br>&Explorer</h2>
   <img id="one" src="image.jpg/rishi.jpeg" alt="img" height="800px" width="600px" data-aos="zoom-in">
   
   <h2 class="about" data-aos="fade-right">--About--</h2>
@@ -88,6 +88,18 @@
       <p class="contact-link">NO:55, 3 <sup>rd</sup>cross Shabari Nagar RK Hegade Nagar<br>Bengaluru-560077</p>
     </div>
   </div>
+  <style>
+    .typing-cursor::after {
+  content: '|';
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+  </style>
 
   <!-- ✅ Navigation Toggle Script -->
   <script>
@@ -106,5 +118,46 @@
       once: true
     });
   </script>
+  <script>
+const helloText = "---Hello---";
+const amText = "I am Hrishikesh,<br>Frontend Developer<br>&Explorer";
+
+// Utility to type out text letter by letter (with HTML support for <br>)
+function typeText(element, text, speed = 80, cb) {
+  element.innerHTML = ""; // Start empty
+  let i = 0;
+  function type() {
+    if (i < text.length) {
+      // Handle <br>
+      if (text.slice(i, i+4) === "<br>") {
+        element.innerHTML += "<br>";
+        i += 4;
+      } else {
+        element.innerHTML += text[i];
+        i++;
+      }
+      element.classList.add('typing-cursor');
+      setTimeout(type, speed);
+    } else {
+      element.classList.remove('typing-cursor');
+      if (cb) cb();
+    }
+  }
+  type();
+}
+
+// On load, type both elements
+window.addEventListener('DOMContentLoaded', () => {
+  const helloEl = document.getElementById('auto-type-hello');
+  const amEl = document.getElementById('auto-type-am');
+
+  typeText(helloEl, helloText, 90, () => {
+    setTimeout(()=> {
+      typeText(amEl, amText, 55);
+    }, 400); // Brief pause before next line
+  });
+});
+</script>
+
 </body>
 </html>
