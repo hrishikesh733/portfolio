@@ -330,16 +330,34 @@ li a:hover {
 
 /* Existing .box styles (optional to improve layout) */
 .box {
-  width: 400px;
-  margin-top: 100px;
-  margin-left: 250px;
-  display: inline-block;
+  width: 90%;
+  max-width: 400px;
+  margin: 40px auto;
+  display: block;
   border: 2px solid darkgoldenrod;
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 0.6);
-  vertical-align: top;
-  cursor: pointer;
   overflow: hidden;
+  cursor: pointer;
+  color: whitesmoke;
+  text-decoration: none;
+  transition: transform 0.3s;
 }
+
+.box:hover {
+  background-color: whitesmoke;
+  color: black;
+  transform: scale(1.02);
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+}
+
+
 
 
